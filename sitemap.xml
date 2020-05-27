@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/26/test/</loc>
+    
+    <lastmod>2020-05-27T02:14:04.822Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/26/%E8%AF%AD%E6%B3%95/</loc>
+    
+    <lastmod>2020-05-27T02:11:22.742Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/05/26/hello-world/</loc>
+    
+    <lastmod>2020-05-26T14:23:33.652Z</lastmod>
+    
+  </url>
+  
+</urlset>
