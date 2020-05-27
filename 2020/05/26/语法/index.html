@@ -1,25 +1,184 @@
-extends includes/layout.pug
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>语法 | Hexo</title>
 
-block content
-  article#post(class="")
-    #article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      !=partial('includes/share/index', {}, {cache:theme.fragment_cache})
-        
-    if theme.reward.enable
-      !=partial('includes/post/reward', {}, {cache:theme.fragment_cache})
+  
+  <meta name="author" content="John Doe">
+  
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .post-ad!=theme.ad.post
+  
+  <meta name="description" content="一级标题二级标题三级标题四级标题五级标题六级标题加粗文字倾斜文字倾斜加粗文字删除线
+三个以上的*或-为分隔线
 
-    include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
-    if page.comments !== false
-      include includes/comments/index.pug
+
+代码用反引号
+1代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行。
+
+
+一个引用
+
+两个引用
+
+三个引用
+
+
+
+超链接名title可加可不加百度
+![图片alt](图片地">
+  
+
+  
+  
+  <meta name="keywords" content="其它">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="语法"/>
+
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Hexo</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>语法</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2020/05/26/语法/" rel="bookmark">
+        <time class="entry-date published" datetime="2020-05-26T15:51:59.000Z">
+          2020-05-26
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><strong>加粗文字</strong><br><em>倾斜文字</em><br><strong><em>倾斜加粗文字</em></strong><br><del>删除线</del></p>
+<p>三个以上的*或-为分隔线</p>
+<hr>
+<hr>
+<p><code>代码用反引号</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一个引用</p>
+<blockquote>
+<p>两个引用</p>
+<blockquote>
+<p>三个引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><a href="超链接地址" title="超链接title">超链接名</a><br>title可加可不加<br><a href="www.baidu.com" title="百度一下">百度</a></p>
+<p>![图片alt](图片地址 ‘’图片title’’)<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加<br><img src="http://img.mp.itc.cn/upload/20170709/8c8b10c4cc6c4c6ca1fc7659a50beb21_th.jpg" alt="Jerry的头像" title="Jerry头像"></p>
+<p>语法：无序列表用任意一个 - + * 都可以。<br>注意：- + * 跟内容之间都要有一个空格</p>
+<ul>
+<li>-号列表</li>
+</ul>
+<ul>
+<li>+号列表</li>
+</ul>
+<ul>
+<li>*号列表</li>
+</ul>
+<p>有序列表语法：数字加点后面跟内容，内容之间有空格。</p>
+<ol>
+<li>一个</li>
+<li>2个</li>
+</ol>
+<p>列表嵌套<br>语法：上一级和下一级之间敲三个空格即可</p>
+<p>==笔刷划线两个等号包起来==</p>
+<p>$$函数两个美元符包起来$$</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/其它/">其它</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2020 John Doe
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>
